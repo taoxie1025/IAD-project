@@ -1,6 +1,23 @@
 body {
-    background-image: url("/assets/background.jpg");
+
     background-size: fill;
     background-repeat: no-repeat;
+}
+
+h1 {
+  text-align:center;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
 }
 
