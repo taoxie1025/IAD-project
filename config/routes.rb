@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resource :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   get 'welcome/about', to: 'welcome#about'
   get 'users/new', to: 'users#new'
   post 'users/' => 'users#show', :as => 'user'
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
