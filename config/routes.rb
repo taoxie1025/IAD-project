@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'users#new'
   get 'welcome/about', to: 'welcome#about'
   get 'users/new', to: 'users#new'
-  get 'users/show', to: 'users#show'
+  post 'users/' => 'users#show', :as => 'user'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
