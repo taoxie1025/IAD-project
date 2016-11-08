@@ -1,0 +1,16 @@
+<%= form_for(@post) do |f| %>
+  <%= render 'shared/error_messages_post', object: f.object %>
+  <div class="field">
+      <%= f.label :"Course name" %>
+      <%= f.text_field :courseName, placeholder: "e.g. Java", class: 'form-control' %>
+
+      <%= f.label :"Course code" %>
+      <%= f.text_field :courseCode, placeholder: "e.g. CSC501", class: 'form-control'%>
+
+      <%= f.label :Department %>
+      <%= f.text_field :department, placeholder: "e.g. Computer Science", class: 'form-control' %>
+      
+      <%= f.text_area :descrition, placeholder: "Let us know your performance in the course..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
