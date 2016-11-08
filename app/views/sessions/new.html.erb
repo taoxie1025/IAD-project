@@ -1,3 +1,5 @@
+<br><br><br>
+
 <% provide(:title, "Log in") %>
 <h1>Log in</h1>
 
@@ -14,9 +16,6 @@
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", 'users/new' %></p>
+    <p>New user? <%= link_to "Sign up now!", :controller => :users, :action => :new %></p>
   </div>
 </div>
-
-
-<%= debug(params) if Rails.env.development? %>
