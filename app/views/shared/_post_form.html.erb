@@ -6,11 +6,14 @@
 
       <%= f.label :"Course code" %>
       <%= f.text_field :courseCode, placeholder: "e.g. CSC501", class: 'form-control'%>
+      
+      <%= f.label :"Cost" %>
+      <%= f.text_field :price, placeholder: "e.g. 10/hr", class: 'form-control'%>
 
       <%= f.label :Department %>
       <%= f.text_field :department, placeholder: "e.g. Computer Science", class: 'form-control' %>
       
-      <%= f.text_area :descrition, placeholder: "Let us know your performance in the course..." %>
+      <%= f.text_area :description, placeholder: "Let us know your performance in the course..." %>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
 <% end %>
