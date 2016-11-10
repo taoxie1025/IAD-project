@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20161110030224) do
     t.text     "courseName"
     t.text     "courseCode"
     t.text     "department"
-    t.text     "descrition"
+    t.text     "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
