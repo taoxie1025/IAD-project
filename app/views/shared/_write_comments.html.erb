@@ -1,0 +1,21 @@
+<br><br><br>
+   
+
+
+<% if logged_in? %>
+  <%= form_for @feedback do |f| %>
+      <%= render 'shared/error_messages_post', object: f.object %>
+      <div class="field">
+          <%= f.label :"rating" %>
+          <%= f.text_field :rating, placeholder: "", class: 'form-control' %>
+          <%= f.hidden_field :sender_id, :value => current_user.id, class: 'form-control' %>
+          <%= f.hidden_field :recipient_id, :value => @post.user_id, class: 'form-control' %>
+          <%= f.hidden_field :postId, :value => @post.id, class: 'form-control' %>
+
+          <%= f.text_area :comment, placeholder: "Let us know your experience with this tutor" %>
+      </div>
+      <%= f.submit "Post", class: "btn btn-primary" %>
+
+    <% end %>
+<% end %>
+

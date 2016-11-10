@@ -1,0 +1,15 @@
+<br><br><br>
+
+<% @post = Post.find(params[:post]) %>
+<h2><%= @post.courseName %></h2>
+<h6><%= @post.courseCode %>, <%= @post.department %></h6>
+<br>
+<h2><%= @post.description %></h2>
+<h2>contact me: <%= User.find(@post.user_id).email %></h2>
+<p><%= @post.price %> per hour</p>
+
+
+
+
+
+<%= render 'shared/write_comments' %>

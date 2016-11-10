@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resource :users
   resource :posts,          only: [:create, :destroy]
+  resource :feedbacks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,6 +17,10 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get 'posts/new', to: 'posts#new'
+  get 'posts/show', to: 'posts#show'
+  post 'feedback/create', to: 'feedback#create'
+  get 'feedback/new', to: 'feedback#new'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

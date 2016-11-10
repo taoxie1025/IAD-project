@@ -19,6 +19,10 @@ class PostsController < ApplicationController
     def destroy
     end
     
+    def show
+        @feedback = Feedback.new
+    end
+    
     private
 
     def post_params
