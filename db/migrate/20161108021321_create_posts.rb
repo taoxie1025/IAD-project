@@ -6,7 +6,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :courseName
       t.text :courseCode
       t.text :department
-      t.text :descrition
+      t.text :descrpition
 
       t.timestamps null: false
     end
