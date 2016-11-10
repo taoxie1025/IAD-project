@@ -8,4 +8,10 @@ class Post < ActiveRecord::Base
     validates :department, presence: true
     validates :description, presence: true, length: { maximum: 140 }
     
+    def self.search(search)
+     where(':courseName LIKE ?', "%#{search}%") 
+     where(':courseCode LIKE ?', "%#{search}%")
+     where(':department LIKE ?', "%#{search}%")
+    end
+    
 end

@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get 'posts/new', to: 'posts#new'
+  get 'welcome/home', to: 'welcome#home'
+  get 'welcome/show', to: 'welcome#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
