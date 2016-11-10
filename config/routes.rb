@@ -2,12 +2,13 @@ Rails.application.routes.draw do
 
   resource :users
   resource :posts,          only: [:create, :destroy]
+  resource :feedbacks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  
+
   root 'users#new'
   get 'welcome/about', to: 'welcome#about'
   get 'users/new', to: 'users#new'
@@ -18,6 +19,9 @@ Rails.application.routes.draw do
   get 'posts/new', to: 'posts#new'
   get 'welcome/home', to: 'welcome#home'
   get 'welcome/show', to: 'welcome#show'
+  get 'posts/show', to: 'posts#show'
+  post 'feedback/create', to: 'feedback#create'
+  get 'feedback/new', to: 'feedback#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

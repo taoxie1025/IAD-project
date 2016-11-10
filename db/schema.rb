@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108021321) do
+ActiveRecord::Schema.define(version: 20161110030224) do
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.text     "comment"
+    t.float    "rating"
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.integer  "postId"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "feedbacks", ["recipient_id", "created_at"], name: "index_feedbacks_on_recipient_id_and_created_at"
 
   create_table "posts", force: :cascade do |t|
     t.integer  "user_id"
