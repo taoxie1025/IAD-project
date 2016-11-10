@@ -19,9 +19,12 @@ Rails.application.routes.draw do
   get 'posts/new', to: 'posts#new'
   get 'welcome/home', to: 'welcome#home'
   get 'welcome/show', to: 'welcome#show'
+  get 'welcome/search', to: 'welcome#search'
   get 'posts/show', to: 'posts#show'
+  get 'posts', to: 'welcome#show'
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
