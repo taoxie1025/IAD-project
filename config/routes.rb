@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root 'users#new'
+  root 'welcome#home'
   get 'welcome/about', to: 'welcome#about'
   get 'users/new', to: 'users#new'
   post 'users/' => 'users#show', :as => 'user'
@@ -24,6 +24,8 @@ Rails.application.routes.draw do
   get 'posts', to: 'welcome#show'
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
+  get 'search', to: 'welcome#search'
+
 
 
   # Example of regular route:
