@@ -1,6 +1,13 @@
 <br><br><br>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
 
-<% @post = Post.find(params[:post]) %>
+<% if params[:post] %>
+    <% @post = Post.find(params[:post]) %>
+<% elsif params[:id]%>
+    <% @post = Post.findBy(params[:id]) %>
+<% end %>
 <h2><%= @post.courseName %></h2>
 <h6><%= @post.courseCode %>, <%= @post.department %></h6>
 <h2><%= @post.description %></h2>
@@ -8,12 +15,11 @@
 <p><%= @post.price %> per hour</p>
 
 <br><br>
-<h1><%= @post.user_id %></h1>
+<h1>Comments</h1>
 <% @feedbacks = Feedback.search(@post.id) %>
 <% @feedbacks.each do |feedback| %>
     <%= render 'shared/comment', :feedback => feedback %>
     <br>
 <% end %>
-
 
 <%= render 'shared/write_comments' %>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resource :users
-  resource :posts,          only: [:create, :destroy]
+  resources :posts,          only: [:create, :destroy]
   resource :feedbacks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   get 'welcome/show', to: 'welcome#show'
   get 'welcome/search', to: 'welcome#search'
   get 'posts/show', to: 'posts#show'
-  get 'posts', to: 'welcome#show'
+
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
   get 'search', to: 'welcome#search'

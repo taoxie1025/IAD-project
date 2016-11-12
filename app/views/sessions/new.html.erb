@@ -1,5 +1,9 @@
 <br><br><br>
 
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
 <% provide(:title, "Log in") %>
 <h1>Log in</h1>
 

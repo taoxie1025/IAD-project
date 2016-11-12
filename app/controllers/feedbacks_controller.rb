@@ -7,12 +7,13 @@ class FeedbacksController < ApplicationController
     def create
         @feedback = Feedback.new(post_params)
         if @feedback.save
-            flash[:success] = "Comment recieved, Thanks!"
-            redirect_to root_url
-            #todo render current page
+            flash[:success] = "Thanks for your feedback!"
+            @post = Post.findBy(@feedback.postId)
+            redirect_to :controller => 'posts', :action => 'show', :id => @feedback.postId
         else
-            render ''  
-            #todo render current page
+            flash[:danger] = "Your feedback did not submit successfully. #{@feedback.errors.full_messages.to_sentence}"
+            @post = Post.findBy(@feedback.postId)
+            redirect_to :controller => 'posts', :action => 'show', :id => @feedback.postId
         end
     end
     

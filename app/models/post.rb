@@ -16,4 +16,8 @@ class Post < ActiveRecord::Base
      end
     end
     
+    def self.findBy(postId)
+     Post.find_by id: "#{postId}"
+    end
+    
 end

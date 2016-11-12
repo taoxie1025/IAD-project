@@ -1,10 +1,8 @@
 <br><br><br>
-   
-
 
 <% if logged_in? %>
   <%= form_for @feedback do |f| %>
-      <%= render 'shared/error_messages_post', object: f.object %>
+      <%= render 'shared/error_messages_feedback', object: f.object %>
       <div class="field">
           <%= f.label :"rating" %>
           <%= f.text_field :rating, placeholder: "rating is between 1 and 5", class: 'form-control' %>

@@ -10,7 +10,7 @@ class PostsController < ApplicationController
         @post = current_user.posts.build(post_params)
         if @post.save
             flash[:success] = "You Ad is created!"
-            redirect_to root_url
+            redirect_to :controller => 'posts', :action => 'show', :id => @post.id
         else
             render 'new'
         end
