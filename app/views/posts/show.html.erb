@@ -8,7 +8,8 @@
 <p><%= @post.price %> per hour</p>
 
 <br><br>
-<% @feedbacks = Feedback.search(@post.user_id) %>
+<h1><%= @post.user_id %></h1>
+<% @feedbacks = Feedback.search(@post.id) %>
 <% @feedbacks.each do |feedback| %>
     <%= render 'shared/comment', :feedback => feedback %>
     <br>

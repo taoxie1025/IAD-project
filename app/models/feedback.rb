@@ -8,7 +8,7 @@ class Feedback < ActiveRecord::Base
     
     def self.search(id)
         if id
-            Feedback.where("recipient_id = ?", "#{id}")
+            Feedback.where("postId = ?", "#{id}")
         else
             scoped
         end
