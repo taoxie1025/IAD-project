@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
     
+    acts_as_messageable
+    
     has_many :posts, dependent: :destroy
 
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -15,6 +17,14 @@ class User < ActiveRecord::Base
         cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
      BCrypt::Password.create(string, cost: cost)
-  end
+    end
+    
+    def mailboxer_name
+        self.name
+    end
+
+    def mailboxer_email(object)
+        self.email
+    end
   
 end

@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
 
+  default_url_options :host => "iad-taoxie1025.c9users.io" #After you pull from the repository, change this to your cloud9 address
+
   resource :users
   resources :posts,          only: [:create, :destroy]
   resource :feedbacks
+  
+  resources :conversations do
+    member do
+      post :reply
+      post :trash
+      post :untrash
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -25,6 +35,10 @@ Rails.application.routes.draw do
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
   get 'search', to: 'welcome#search'
+  
+  get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
+  get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
+  get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
 
 
 
