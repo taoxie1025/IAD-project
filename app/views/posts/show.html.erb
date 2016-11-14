@@ -13,9 +13,17 @@
     <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour</h6>
     <hr>
     <p><%= @post.description %></p>
+    <% if logged_in? %>
     <div style="width:155px;">
-        <%= link_to "Send message to me", { :controller => "conversations", :action => "new"}, class: "btn btn-primary" %>
+        <% receiptientID = @post.user_id %>
+        <% subject = "Inquiry about \"" + @post.courseName + " " + @post.courseCode + "\"" %>
+        <%= link_to "Send message to me", { :controller => "conversations", 
+            :action => "new", 
+            :receiptientID => receiptientID, 
+            :subject => subject},
+            class: "btn btn-primary" %>
     </div>
+    <% end %>
     <br><br>
     <h2>Comments</h2>
     <% @feedbacks = Feedback.search(@post.id) %>

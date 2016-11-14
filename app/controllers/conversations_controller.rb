@@ -3,6 +3,8 @@ class ConversationsController < ApplicationController
     before_action :authenticate_with_http_digest
     
     def new
+        @receiptient = User.where(id: params[:receiptientID])
+        @subject = params[:subject]
     end
     
     def create
