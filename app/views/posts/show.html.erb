@@ -3,23 +3,25 @@
   <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
 
-<% if params[:post] %>
-    <% @post = Post.find(params[:post]) %>
-<% elsif params[:id]%>
-    <% @post = Post.findBy(params[:id]) %>
-<% end %>
-<h2><%= @post.courseName %></h2>
-<h6><%= @post.courseCode %>, <%= @post.department %></h6>
-<h2><%= @post.description %></h2>
-<h2>contact me: <%= User.find(@post.user_id).email %></h2>
-<p><%= @post.price %> per hour</p>
-
-<br><br>
-<h1>Comments</h1>
-<% @feedbacks = Feedback.search(@post.id) %>
-<% @feedbacks.each do |feedback| %>
-    <%= render 'shared/comment', :feedback => feedback %>
-    <br>
-<% end %>
-
-<%= render 'shared/write_comments' %>
+<div id='post_show'>
+    <% if params[:post] %>
+        <% @post = Post.find(params[:post]) %>
+    <% elsif params[:id]%>
+        <% @post = Post.findBy(params[:id]) %>
+    <% end %>
+    <h2><%= @post.courseName %></h2>
+    <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour</h6>
+    <hr>
+    <p><%= @post.description %></p>
+    <div style="width:155px;">
+        <%= link_to "Send message to me", { :controller => "conversations", :action => "new"}, class: "btn btn-primary" %>
+    </div>
+    <br><br>
+    <h2>Comments</h2>
+    <% @feedbacks = Feedback.search(@post.id) %>
+    <% @feedbacks.each do |feedback| %>
+        <%= render 'shared/comment', :feedback => feedback %>
+    <% end %>
+    
+    <%= render 'shared/write_comments' %>
+</div>

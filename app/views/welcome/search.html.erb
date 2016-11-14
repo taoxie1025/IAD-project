@@ -1,9 +1,11 @@
 <br>
 <br>
 <br>
-
-<% if @posts.present? %>
-  <%= render @posts %>
-<% else %>
-  <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
-<% end %>
+<h3>Search results for "<%= params[:search] %>"</h3>
+<div id='search_results'>
+  <% if @posts.present? %>
+    <%= render @posts %>
+  <% else %>
+    <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+  <% end %>
+</div>
