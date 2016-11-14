@@ -17,7 +17,7 @@
       <% if current_user.posts.any? %>
         <h3>Posts (<%= current_user.posts.count %>)</h3>
         <ol class="microposts">
-          <%= render current_user.posts %>
+            <%= render current_user.posts %>
         </ol>
       <% end %>
     </div>
