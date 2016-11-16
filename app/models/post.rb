@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
     validates :courseName, presence: true
     validates :courseCode, presence: true
     validates :department, presence: true
-    validates :description, presence: true, length: { maximum: 140 }
+    validates :description, presence: true, length: { maximum: 500 }
     
     def self.search(search)
      if search

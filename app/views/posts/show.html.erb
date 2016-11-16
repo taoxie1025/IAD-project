@@ -10,7 +10,13 @@
         <% @post = Post.findBy(params[:id]) %>
     <% end %>
     <h2><%= @post.courseName %></h2>
-    <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour</h6>
+    <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <% if current_user.id == @post.user_id %>
+              <%= link_to "Edit", posts_edit_path(post_id: @post.id),
+              class: "btn-xs btn-primary" %>
+              <% end %>
+    </h6>
+
     <hr>
     <p><%= @post.description %></p>
     <% if logged_in? %>
