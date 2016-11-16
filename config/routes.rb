@@ -33,7 +33,6 @@ Rails.application.routes.draw do
   get 'welcome/search', to: 'welcome#search'
   get 'posts/show', to: 'posts#show'
   get 'posts/update', to: 'posts#update'
-  
 
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
