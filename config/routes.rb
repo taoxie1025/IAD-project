@@ -21,18 +21,23 @@ Rails.application.routes.draw do
 
   root 'welcome#home'
   get 'welcome/about', to: 'welcome#about'
+  
   get 'users/new', to: 'users#new'
   post 'users/' => 'users#show', :as => 'user'
+  
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+  
   get 'posts/new', to: 'posts#new'
   get 'posts/edit', to: 'posts#edit'
+  get 'posts/show', to: 'posts#show'
+  get 'posts/update', to: 'posts#update'
+  
   get 'welcome/home', to: 'welcome#home'
   get 'welcome/show', to: 'welcome#show'
   get 'welcome/search', to: 'welcome#search'
-  get 'posts/show', to: 'posts#show'
-  get 'posts/update', to: 'posts#update'
+
 
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'
