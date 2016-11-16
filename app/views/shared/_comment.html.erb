@@ -1,4 +1,15 @@
 <hr>
 <h4><%= feedback.rating %> / 5.0</h4>
 <p><%= feedback.comment %></p>
-<p>wrote by <%= User.find(feedback.sender_id).name %> <%= time_ago_in_words(feedback.created_at) %> ago.</p>
+<p>wrote by <%= User.find(feedback.sender_id).name %> <%= time_ago_in_words(feedback.created_at) %> ago.
+    <% if current_user.id == feedback.recipient_id %>
+        <%= link_to "Delete", 
+        {:controller => :feedbacks, :action => 'destroy',
+        :id => feedback.id,
+        :postId => feedback.postId},
+        :method => :delete,
+        class: "btn-xs btn-danger",
+        data: { confirm: "You sure?" }
+        %>
+    <% end %>
+</p>

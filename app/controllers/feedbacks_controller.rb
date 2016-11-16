@@ -17,6 +17,14 @@ class FeedbacksController < ApplicationController
         end
     end
     
+    def destroy
+        @post = Post.findBy(params[:postId])
+        Feedback.find(params[:id]).destroy
+        flash[:success] = "Comment deleted"
+        redirect_to :controller => 'posts', :action => 'show', :id => @post.id
+    end
+    
+    
     private
 
     def post_params

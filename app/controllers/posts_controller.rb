@@ -30,7 +30,7 @@ class PostsController < ApplicationController
     def update
         @post = Post.find(params[:id])
         if @post.update_attributes(post_params)
-            flash[:success] = "You changes are saved"
+            flash[:success] = "You changes were saved successfully"
             redirect_to :controller => 'posts', :action => 'show', :id => @post.id
          else
             render 'edit'
