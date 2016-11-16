@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   default_url_options :host => "iad-taoxie1025.c9users.io" #After you pull from the repository, change this to your cloud9 address
 
   resource :users
-  resources :posts,          only: [:create, :destroy]
+  resources :posts,          only: [:create, :destroy, :update]
   resource :feedbacks
   
   resources :conversations do
@@ -27,10 +27,13 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get 'posts/new', to: 'posts#new'
+  get 'posts/edit', to: 'posts#edit'
   get 'welcome/home', to: 'welcome#home'
   get 'welcome/show', to: 'welcome#show'
   get 'welcome/search', to: 'welcome#search'
   get 'posts/show', to: 'posts#show'
+  get 'posts/update', to: 'posts#update'
+  
 
   post 'feedback/create', to: 'feedback#create'
   get 'feedback/new', to: 'feedback#new'

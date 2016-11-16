@@ -23,6 +23,20 @@ class PostsController < ApplicationController
         @feedback = Feedback.new
     end
     
+    def edit
+        @post = Post.find(params[:post_id])
+    end
+    
+    def update
+        @post = Post.find(params[:id])
+        if @post.update_attributes(post_params)
+            flash[:success] = "You changes are saved"
+            redirect_to :controller => 'posts', :action => 'show', :id => @post.id
+         else
+            render 'edit'
+        end
+    end
+    
     private
 
     def post_params

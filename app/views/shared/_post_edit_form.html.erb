@@ -1,0 +1,19 @@
+<%= form_for(@post) do |f| %>
+  <%= render 'shared/error_messages_post', object: f.object %>
+  <div class="field">
+      <%= f.label :"Course name" %>
+      <%= f.text_field :courseName, value: @post.courseName, class: 'form-control' %>
+
+      <%= f.label :"Course code" %>
+      <%= f.text_field :courseCode, value: @post.courseCode, class: 'form-control'%>
+      
+      <%= f.label :"Cost" %>
+      <%= f.text_field :price, value: @post.price, class: 'form-control'%>
+
+      <%= f.label :Department %>
+      <%= f.text_field :department, value: @post.department, class: 'form-control' %>
+      
+      <%= f.text_area :description, value: @post.description %>
+  </div>
+  <%= f.submit "Save", class: "btn btn-primary" %>
+<% end %>
