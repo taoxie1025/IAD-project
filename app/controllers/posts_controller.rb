@@ -40,7 +40,11 @@ class PostsController < ApplicationController
     def destroy
         Post.find(params[:id]).destroy
         flash[:success] = "Post deleted"
-        redirect_to users_url
+        if current_user.isAdmin
+            redirect_to(:back)
+        else
+            redirect_to users_url
+        end
     end
     
     private

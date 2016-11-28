@@ -22,6 +22,33 @@ class UsersController < ApplicationController
     end
     
     
+     def set_as_admin
+        @user = User.find(params[:id])
+        @user.isAdmin = true
+        @user.save
+        flash[:success] = "Set as administrator successfully"
+        render 'admin/show'
+    end
+    
+    def set_as_user
+        @user = User.find(params[:id])
+        @user.isAdmin = false
+        @user.save
+        flash[:success] = "Set as user successfully"
+        if current_user.present? && current_user.isAdmin
+            render 'admin/show'
+        else
+            render 'welcome/home'
+        end
+    end
+    
+    def delete_user
+        @user = User.find(params[:id]).destroy
+        flash[:success] = "User deleted"
+        render 'admin/show'
+    end
+    
+    
     private
 
         def user_params

@@ -2,7 +2,7 @@
 <h4><%= feedback.rating %> / 5.0</h4>
 <p><%= feedback.comment %></p>
 <p>-Wrote by <%= User.find(feedback.sender_id).name %> <%= time_ago_in_words(feedback.created_at) %> ago.
-    <% if current_user.present? && (current_user.id == feedback.recipient_id || current_user.id == feedback.sender_id) %>
+    <% if current_user.present? && (current_user.id == feedback.recipient_id || current_user.id == feedback.sender_id) || current_user.isAdmin%>
         <%= link_to "Delete", 
         {:controller => :feedbacks, :action => 'destroy',
         :id => feedback.id,
