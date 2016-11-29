@@ -6360,3 +6360,444 @@ Processing by WelcomeController#home as HTML
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
   Rendered layouts/_navigation_bar.html.erb (1.9ms)
 Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 129.68.189.3 at 2016-11-29 23:15:30 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (662.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navigation_bar.html.erb (28.8ms)
+Completed 200 OK in 915ms (Views: 903.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedback.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/mailbox.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/styles.self-e392baf5620054489e01dcba40e6ab3f0254ee20f6be7cc8e7fa1ca03d1a8458.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/chosen.self-91a4eac98738d94247d82cab7e54cfdfbe64a57d282792e50f30b678e50398af.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/chosen-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/conversations.self-d21e3ceaf26990e7dfe9074e1fe013e19219a5ca1f76062e8f2fda1c086a55e5.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/feedback.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/home.self-6f4b8033d33f12e6af4ddc4c044696783cd58faac025a36fdc6c3c49eac17a2a.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/mailbox.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 129.68.189.3 at 2016-11-29 23:15:32 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 129.68.189.3 at 2016-11-29 23:17:12 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navigation_bar.html.erb (18.5ms)
+Completed 200 OK in 208ms (Views: 204.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 129.68.189.3 at 2016-11-29 23:18:11 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (296.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navigation_bar.html.erb (19.4ms)
+Completed 200 OK in 448ms (Views: 435.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 129.68.189.3 at 2016-11-29 23:18:15 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (828.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navigation_bar.html.erb (2.8ms)
+Completed 200 OK in 990ms (Views: 977.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 129.68.189.3 at 2016-11-29 23:18:24 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navigation_bar.html.erb (1.9ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 129.68.189.3 at 2016-11-29 23:18:46 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8KSFTXFlus22ejpV9OTNraVOG5/3vh7FCNcI+iQSdECyKOwpHsam1x2YY5locZjQ9tJA9CW+tG0LKE6lc49CDg==", "session"=>{"email"=>"lily@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "lily@yahoo.com"]]
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navigation_bar.html.erb (3.9ms)
+Completed 200 OK in 261ms (Views: 149.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 129.68.189.3 at 2016-11-29 23:18:56 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l2IhnotvS/9qcB4cqpo9a0a5bH1yipFGw83F8LS11YbV7kj65MxX5cGSR9A2D2gWFSU3FqCKO+7AMoOv4yjjyA==", "session"=>{"email"=>"lily@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "lily@yahoo.com"]]
+Redirected to https://tutor-app-harsh14.c9users.io/
+Completed 302 Found in 71ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 129.68.189.3 at 2016-11-29 23:18:56 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_bar.html.erb (2.6ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users.2" for 129.68.189.3 at 2016-11-29 23:19:03 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Exists (0.4ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ?  ORDER BY "posts"."created_at" DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  Rendered posts/_post.html.erb (3.3ms)
+  Rendered users/show.html.erb within layouts/application (56.4ms)
+  Rendered layouts/_navigation_bar.html.erb (3.3ms)
+Completed 200 OK in 227ms (Views: 187.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/medium/missing.png" for 129.68.189.3 at 2016-11-29 23:19:03 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.1ms)
+
+
+Started GET "/users.2" for 129.68.189.3 at 2016-11-29 23:19:13 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Exists (0.1ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ?  ORDER BY "posts"."created_at" DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered users/show.html.erb within layouts/application (163.3ms)
+  Rendered layouts/_navigation_bar.html.erb (1.3ms)
+Completed 200 OK in 270ms (Views: 266.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/medium/missing.png" for 129.68.189.3 at 2016-11-29 23:19:14 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.4ms)
+
+
+Started GET "/users.2" for 129.68.189.3 at 2016-11-29 23:19:16 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Exists (0.1ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = ?  ORDER BY "posts"."created_at" DESC LIMIT 30 OFFSET 0  [["user_id", 2]]
+  Rendered posts/_post.html.erb (1.4ms)
+  Rendered users/show.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation_bar.html.erb (2.2ms)
+Completed 200 OK in 155ms (Views: 151.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/medium/missing.png" for 129.68.189.3 at 2016-11-29 23:19:16 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.1ms)
+
+
+Started GET "/welcome/about" for 129.68.189.3 at 2016-11-29 23:19:19 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/medium/missing.png" for 129.68.189.3 at 2016-11-29 23:19:19 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/medium/missing.png"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.2ms)
+
+
+Started DELETE "/logout" for 129.68.189.3 at 2016-11-29 23:19:23 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uCMlhFGtXewyMPOym4BKjGCz8slUmtIV4c6RluxBCdH6r0zgPg5B9pnSqn4HFR/xMy+pooaaeL3iMdfJu9w/nw=="}
+Redirected to https://tutor-app-harsh14.c9users.io/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 129.68.189.3 at 2016-11-29 23:19:23 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_navigation_bar.html.erb (2.7ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 129.68.189.3 at 2016-11-29 23:19:27 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_navigation_bar.html.erb (2.4ms)
+Completed 200 OK in 231ms (Views: 229.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 129.68.189.3 at 2016-11-29 23:20:09 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GFFn4PNQlLxJZhRfNnwM7M/0fQEDNySKpHMcAd9KrcBa3Q6EnPOIpuKETZOq6VmRnGgmatE3jiKnjFpeiNebjg==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007faa43f916a0 @tempfile=#<Tempfile:/tmp/RackMultipart20161129-5027-g03bc5.jpg>, @original_filename="lily.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"lily.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"test4", "email"=>"test4@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Command :: file -b --mime '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-jbz5xx.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]'
+Command :: convert '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' -auto-orient -resize "600x600>" '/tmp/a440c95496648eb0e7ceee1b34263e3020161129-5027-h84dlu'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]'
+Command :: convert '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' -auto-orient -resize "300x300>" '/tmp/a440c95496648eb0e7ceee1b34263e3020161129-5027-5qbufq'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]'
+Command :: convert '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-dw4nz0.jpg[0]' -auto-orient -resize "x150" -crop "150x150+25+0" +repage '/tmp/a440c95496648eb0e7ceee1b34263e3020161129-5027-9qr99z'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/89f288757f4d0693c99b007855fc075e20161129-5027-1n9n8ey.jpg'
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('test4@yahoo.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test4"], ["email", "test4@yahoo.com"], ["password_digest", "$2a$10$.OFd8dF/X.aBvD5NMA4eXufDN2WRD0wZCAAq.FknStbmldMgW7Mde"], ["image_file_name", "lily.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 60469], ["image_updated_at", "2016-11-29 23:20:09.523883"], ["created_at", "2016-11-29 23:20:10.131908"], ["updated_at", "2016-11-29 23:20:10.131908"]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://tutor-app-harsh14.c9users.io/users.12
+Completed 302 Found in 728ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/users.12" for 129.68.189.3 at 2016-11-29 23:20:10 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1[0m  [["user_id", 12]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation_bar.html.erb (1.3ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 129.68.189.3 at 2016-11-29 23:20:16 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 12]]
+  Rendered shared/_user_info.html.erb (4.9ms)
+  Rendered shared/_error_messages_post.html.erb (0.8ms)
+  Rendered shared/_post_form.html.erb (81.6ms)
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 12]]
+  Rendered posts/new.html.erb within layouts/application (93.7ms)
+  Rendered layouts/_navigation_bar.html.erb (1.6ms)
+Completed 200 OK in 226ms (Views: 223.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users.12" for 129.68.189.3 at 2016-11-29 23:20:24 +0000
+Cannot render console from 129.68.189.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mPost Exists (0.1ms)[0m  SELECT  1 AS one FROM "posts" WHERE "posts"."user_id" = ? LIMIT 1  [["user_id", 12]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_bar.html.erb (1.8ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.4ms)

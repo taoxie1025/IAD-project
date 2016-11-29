@@ -24,6 +24,9 @@ Rails.application.routes.draw do
   
   get 'users/new', to: 'users#new'
   post 'users/' => 'users#show', :as => 'user'
+  get 'users/set_as_admin', to: 'users#set_as_admin'
+  get 'users/set_as_user', to: 'users#set_as_user'
+  get 'users/delete_user', to: 'users#delete_user'
   
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
@@ -46,7 +49,9 @@ Rails.application.routes.draw do
   get "mailbox/inbox" => "mailbox#inbox", as: :mailbox_inbox
   get "mailbox/sent" => "mailbox#sent", as: :mailbox_sent
   get "mailbox/trash" => "mailbox#trash", as: :mailbox_trash
-
+  
+  get 'admin/show', to: 'admin#show'
+  get 'admin/show_all_posts', to: 'admin#show_all_posts'
 
 
   # Example of regular route:

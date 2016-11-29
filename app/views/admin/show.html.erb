@@ -1,0 +1,57 @@
+<br><br><br>
+<%if current_user.present? && current_user.isAdmin %>
+
+<h2>Users:</h2>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
+<table border=1> 
+<th>&nbsp;&nbsp;ID&nbsp;&nbsp;</th><th>&nbsp;&nbsp;name&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;email&nbsp;&nbsp;</th><th>&nbsp;&nbsp;created_at&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;numberOfPost&nbsp;&nbsp;</th><th>&nbsp;&nbsp;numberOfComment&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;isAdmin&nbsp;&nbsp;</th>
+    <% User.find_each do |user| %>
+        <tr>
+        
+        <th>&nbsp;&nbsp;<%= user.id %>&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;<%= link_to "#{user.name}", {:controller => "admin", :action => "show_all_posts", :id => user.id} %>&nbsp;&nbsp;</th>
+        
+        <% receiptientID = user.id %>
+        <th>&nbsp;&nbsp;<%= link_to "#{user.email}", { :controller => "conversations", 
+            :action => "new", 
+            :receiptientID => receiptientID} %>&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;<%= user.created_at %>&nbsp;&nbsp;</th>
+        <% numberOfPost = 0 %>
+        <% Post.find_each do |post| %>
+            <% if post.user_id == user.id %>
+                <% numberOfPost =  numberOfPost + 1%>
+            <% end %>
+        <% end %>
+        <th>&nbsp;&nbsp;<%= link_to "#{numberOfPost}", {:controller => "admin", :action => "show_all_posts", :id => user.id}%>&nbsp;&nbsp;</th>
+        
+        <% numberOfComment = 0 %>
+        <% Feedback.find_each do |feedback| %>
+            <% if feedback.sender_id == user.id %>
+                <% numberOfComment =  numberOfComment + 1%>
+            <% end %>
+        <% end %>
+        <th>&nbsp;&nbsp;<%=numberOfComment%>&nbsp;&nbsp;</th>
+        
+        
+        <% if user.isAdmin %>
+            <th>&nbsp;&nbsp;Y&nbsp;&nbsp;</th>
+        <% else %>
+            <th>&nbsp;&nbsp;N&nbsp;&nbsp;</th>
+        <% end %>
+        
+        <% if !user.isAdmin %>
+            <th><%= link_to "Set as admin", {:controller => "users", :action => "set_as_admin", :id => user.id}, class: "btn-xs btn-warning", data: { confirm: "You sure?" } %></th>    
+        <% else %>
+            <th><%= link_to "Set as user", {:controller => "users", :action => "set_as_user", :id => user.id}, class: "btn-xs btn-primary" %></th> 
+        <% end %>
+        <th><%= link_to "Delete", {:controller => "users", :action => "delete_user", :id => user.id}, class: "btn-xs btn-danger", data: { confirm: "You sure?" } %></tr>
+    <% end %>
+</table>
+
+<% end %>

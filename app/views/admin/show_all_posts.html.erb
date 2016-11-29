@@ -4,25 +4,23 @@
   <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
 
-<!--<%# provide(:title, current_user.image) %>-->
 
+<% provide(:title, @user.name) %>
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= current_user.name %>
-        image:
-        <%= image_tag "#{current_user.image.url(:medium)}" %>
+        <%= @user.name %>
       </h1>
     </section>
   </aside>
   <div class="col-md-8">
-    <% if current_user.posts.any? %>
-      <h3>Posts (<%= current_user.posts.count %>)</h3>
+    <% if @user.posts.any? %>
+      <h3>Posts (<%= @user.posts.count %>)</h3>
       <ol class="microposts">
-        <%= render @posts %>
+        <%= render @user.posts %>
       </ol>
-      <%= will_paginate @posts %>
+      <% @posts = @user.posts %>
     <% end %>
   </div>
 </div>
