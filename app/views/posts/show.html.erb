@@ -3,12 +3,16 @@
   <div class="alert alert-<%= message_type %>"><%= message %></div>
 <% end %>
 
+
 <div id='post_show'>
     <% if params[:post] %>
         <% @post = Post.find(params[:post]) %>
     <% elsif params[:id]%>
         <% @post = Post.findBy(params[:id]) %>
     <% end %>
+
+    <%= image_tag current_user.image.url(:thumb) %>
+    
     <h2><%= @post.courseName %></h2>
     <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour
         - Posted by <%= User.find(@post.user_id).name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

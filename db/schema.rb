@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121040648) do
+ActiveRecord::Schema.define(version: 20161123030517) do
 
   create_table "feedbacks", force: :cascade do |t|
     t.text     "comment"
@@ -88,8 +88,12 @@ ActiveRecord::Schema.define(version: 20161121040648) do
     t.text     "courseCode"
     t.text     "department"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "posts", ["user_id", "created_at"], name: "index_posts_on_user_id_and_created_at"
@@ -98,10 +102,14 @@ ActiveRecord::Schema.define(version: 20161121040648) do
     t.string   "name"
     t.string   "password"
     t.string   "email"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
     t.string   "password_digest"
-    t.boolean  "isAdmin",         default: false
+    t.boolean  "isAdmin",            default: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
