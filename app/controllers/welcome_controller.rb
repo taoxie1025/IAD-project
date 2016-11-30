@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
 
     def home
         # @user = User.find(1)
-        # @user.isAdmin = true;
+        # @user.isAdmin = true
         # @user.save
     end
     

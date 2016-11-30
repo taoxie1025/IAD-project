@@ -11,7 +11,7 @@
         <% @post = Post.findBy(params[:id]) %>
     <% end %>
 
-    <%= image_tag current_user.image.url(:thumb) %>
+    <%= image_tag User.find(@post.user_id).image.url(:thumb) %>
     
     <h2><%= @post.courseName %></h2>
     <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour
