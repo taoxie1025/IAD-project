@@ -11,6 +11,8 @@
     <section class="user_info">
       <h1>
         <%= @user.name %>
+        <br>
+        <%= image_tag "#{current_user.image.url(:medium)}" %>
       </h1>
     </section>
   </aside>
