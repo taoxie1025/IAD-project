@@ -51,7 +51,7 @@
         <% if !user.isAdmin %>
             <th><%= link_to "Set as admin", {:controller => "users", :action => "set_as_admin", :id => user.id}, class: "btn btn-warning", data: { confirm: "You sure?" } %></th>    
         <% else %>
-            <th><%= link_to "Set as user", {:controller => "users", :action => "set_as_user", :id => user.id}, class: "btn btn-primary" %></th> 
+            <th>&nbsp;<%= link_to "Set as user", {:controller => "users", :action => "set_as_user", :id => user.id}, class: "btn btn-primary" %></th> 
         <% end %>
         <th><%= link_to "Delete", {:controller => "users", :action => "delete_user", :id => user.id}, class: "btn btn-danger", data: { confirm: "You sure?" } %></tr>
     <% end %>

@@ -12,7 +12,7 @@
       <h1>
         <%= @user.name %>
         <br>
-        <%= image_tag "#{current_user.image.url(:medium)}" %>
+        <%= image_tag "#{@user.image.url(:medium)}" %>
       </h1>
       <%= form_for @user, method: :put,  html: { multipart: true } do %>
       <br>
