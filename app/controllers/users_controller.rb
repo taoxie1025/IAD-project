@@ -5,6 +5,18 @@ class UsersController < ApplicationController
         @user = User.new
     end
     
+    def update
+         @user = current_user
+        @user.image = params[:image]
+        if @user.save
+            flash[:success] = "Profile picture updated."
+        else
+            flash[:danger] = "Failed to update profile picture."
+        end
+        redirect_to @user
+    end
+    
+    
     def create
         @user = User.new(user_params)
         puts 'user params:', user_params
