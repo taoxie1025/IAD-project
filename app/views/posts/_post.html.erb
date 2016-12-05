@@ -1,6 +1,9 @@
 <li id="post-<%= post.id%>">
   <div>
-    <h2><%= link_to post.courseName + " " + post.courseCode, :controller => "posts", :action => :show, :post => post.id %></h2>
+    <h2>
+      <%= link_to image_tag(User.find(post.user_id).image.url(:medium), :size => '55x50'), :controller => "posts", :action => :show, :post => post.id%>
+      <%= link_to post.courseName + " " + post.courseCode, :controller => "posts", :action => :show, :post => post.id %>
+      </h2>
     <ul>
         <li>Posted <%= time_ago_in_words(post.created_at) unless post.created_at.blank? %> ago.
             <% if  (current_user.present? && current_user.id == post.user_id) || (current_user.present? &&current_user.isAdmin) %>

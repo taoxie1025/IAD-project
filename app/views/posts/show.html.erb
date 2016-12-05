@@ -11,8 +11,22 @@
         <% @post = Post.findBy(params[:id]) %>
     <% end %>
 
-    <%= image_tag User.find(@post.user_id).image.url(:thumb) %>
-    
+   
+<div class="row">
+    <aside class="col-md-4">
+        <br>
+         <%= image_tag User.find(@post.user_id).image.url(:medium) %>
+         <br><br>
+        <div style="width:155px;">
+        <% receiptientID = @post.user_id %>
+        <% subject = "Inquiry about \"" + @post.courseName + " " + @post.courseCode + "\"" %>
+        <%= link_to "Send message to me", { :controller => "conversations", 
+            :action => "new", 
+            :receiptientID => receiptientID, 
+            :subject => subject},
+            class: "btn btn-primary" %>
+        </div>
+    </aside>
     <h2><%= @post.courseName %></h2>
     <h6><%= @post.courseCode %>, <%= @post.department %>, $<%= @post.price %> per hour
         - Posted by <%= User.find(@post.user_id).name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,18 +36,12 @@
               <% end %>
     </h6>
 
+
+    <div class="col-md-8">
     <hr>
     <p><%= @post.description %></p>
     <% if logged_in? %>
-    <div style="width:155px;">
-        <% receiptientID = @post.user_id %>
-        <% subject = "Inquiry about \"" + @post.courseName + " " + @post.courseCode + "\"" %>
-        <%= link_to "Send message to me", { :controller => "conversations", 
-            :action => "new", 
-            :receiptientID => receiptientID, 
-            :subject => subject},
-            class: "btn btn-primary" %>
-    </div>
+
     <% end %>
     <br><br>
     <h2>Comments</h2>
@@ -43,4 +51,6 @@
     <% end %>
     
     <%= render 'shared/write_comments' %>
+     </aside>
+</div>
 </div>
