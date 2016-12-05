@@ -8,6 +8,7 @@
 
 <table border=1> 
 <th>&nbsp;&nbsp;ID&nbsp;&nbsp;</th><th>&nbsp;&nbsp;name&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;pic&nbsp;&nbsp;</th>
 <th>&nbsp;&nbsp;email&nbsp;&nbsp;</th><th>&nbsp;&nbsp;created_at&nbsp;&nbsp;</th>
 <th>&nbsp;&nbsp;numberOfPost&nbsp;&nbsp;</th><th>&nbsp;&nbsp;numberOfComment&nbsp;&nbsp;</th>
 <th>&nbsp;&nbsp;isAdmin&nbsp;&nbsp;</th>
@@ -16,7 +17,9 @@
         
         <th>&nbsp;&nbsp;<%= user.id %>&nbsp;&nbsp;</th>
         <th>&nbsp;&nbsp;<%= link_to "#{user.name}", {:controller => "admin", :action => "show_all_posts", :id => user.id} %>&nbsp;&nbsp;</th>
-        
+        <th><%= link_to image_tag(user.image.url(:medium), :size => '40x40'), {:controller => "admin", :action => "show_all_posts", :id => user.id}%>
+</th>
+
         <% receiptientID = user.id %>
         <th>&nbsp;&nbsp;<%= link_to "#{user.email}", { :controller => "conversations", 
             :action => "new", 
@@ -46,11 +49,11 @@
         <% end %>
         
         <% if !user.isAdmin %>
-            <th><%= link_to "Set as admin", {:controller => "users", :action => "set_as_admin", :id => user.id}, class: "btn-xs btn-warning", data: { confirm: "You sure?" } %></th>    
+            <th><%= link_to "Set as admin", {:controller => "users", :action => "set_as_admin", :id => user.id}, class: "btn btn-warning", data: { confirm: "You sure?" } %></th>    
         <% else %>
-            <th><%= link_to "Set as user", {:controller => "users", :action => "set_as_user", :id => user.id}, class: "btn-xs btn-primary" %></th> 
+            <th><%= link_to "Set as user", {:controller => "users", :action => "set_as_user", :id => user.id}, class: "btn btn-primary" %></th> 
         <% end %>
-        <th><%= link_to "Delete", {:controller => "users", :action => "delete_user", :id => user.id}, class: "btn-xs btn-danger", data: { confirm: "You sure?" } %></tr>
+        <th><%= link_to "Delete", {:controller => "users", :action => "delete_user", :id => user.id}, class: "btn btn-danger", data: { confirm: "You sure?" } %></tr>
     <% end %>
 </table>
 
