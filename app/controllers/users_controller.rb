@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     end
     
     def update
-         @user = current_user
+        @user = current_user
         @user.image = params[:image]
         if @user.save
             flash[:success] = "Profile picture updated."
@@ -14,6 +14,17 @@ class UsersController < ApplicationController
             flash[:danger] = "Failed to update profile picture."
         end
         redirect_to @user
+    end
+    
+    def update_by_admin
+        @user = User.find(params[:target_user_id])
+        @user.image = params[:image]
+        if @user.save
+            flash[:success] = "Profile picture updated."
+        else
+            flash[:danger] = "Failed to update profile picture."
+        end
+        redirect_to :back
     end
     
     

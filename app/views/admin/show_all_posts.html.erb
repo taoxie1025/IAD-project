@@ -14,7 +14,8 @@
         <br>
         <%= image_tag "#{@user.image.url(:medium)}" %>
       </h1>
-      <%= form_for @user, method: :put,  html: { multipart: true } do %>
+      <%= form_for @user, :url => url_for(:controller => 'users', :action => 'update_by_admin'),  html: { multipart: true } do %>
+      <%= hidden_field_tag "target_user_id", "#{@user.id}" %>
       <br>
       <%= file_field_tag :image %>
       <%= submit_tag("Update", class: "btn btn-primary") %>

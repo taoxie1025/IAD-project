@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   get 'users/set_as_admin', to: 'users#set_as_admin'
   get 'users/set_as_user', to: 'users#set_as_user'
   get 'users/delete_user', to: 'users#delete_user'
+  patch 'users/update_by_admin', to: 'users#update_by_admin'
+
   
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
