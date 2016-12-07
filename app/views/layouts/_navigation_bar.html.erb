@@ -4,6 +4,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", :controller => :welcome, :action => :about %></li>
         <% if logged_in? %>
           <li><%= link_to "Post Your Ad", :controller => :posts, :action => :new %></li>
           <% if unread_messages_count == 0%>
@@ -12,7 +13,7 @@
             <li><%= link_to "Inbox".html_safe, mailbox_inbox_path %></li>
             <li><%= link_to "#{image_tag("mail_new_icon", :size => '25x22')}".html_safe, mailbox_inbox_path, :class => "blink-image" %></li>
           <% end %>
-          <li><%= link_to "About", :controller => :welcome, :action => :about %></li>
+          
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
